@@ -1,6 +1,7 @@
 Compile CSS from partial CSS sources
 ====================================
 
+[![Build Status](https://img.shields.io/travis/magsdk/plugin-css.svg?style=flat-square)](https://travis-ci.org/magsdk/plugin-css)
 [![NPM version](https://img.shields.io/npm/v/mag-plugin-css.svg?style=flat-square)](https://www.npmjs.com/package/mag-plugin-css)
 [![Dependencies Status](https://img.shields.io/david/magsdk/plugin-css.svg?style=flat-square)](https://david-dm.org/magsdk/plugin-css)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/magsdk)
