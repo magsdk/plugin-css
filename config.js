@@ -10,7 +10,7 @@ var path     = require('path'),
     config   = require('spa-plugin/config'),
     pkgData  = require(path.join(process.cwd(), 'package.json')),
     profiles = {},
-    modules  = ['mag-app', 'stb-component'];
+    modules  = ['mag-app'/*, 'stb-component'*/];
 
 
 function preparePaths ( name ) {
@@ -25,7 +25,8 @@ function preparePaths ( name ) {
 
 
 Object.keys(pkgData.dependencies || {}).concat(Object.keys(pkgData.devDependencies || {})).forEach(function ( name ) {
-    if ( name.indexOf('stb-component-') === 0 || name.indexOf('mag-component-') === 0 ) {
+    //if ( name.indexOf('stb-component-') === 0 || name.indexOf('mag-component-') === 0 ) {
+    if ( name.indexOf('-component-') !== -1 ) {
         modules.push(name);
     }
 });
