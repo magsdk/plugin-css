@@ -14,6 +14,14 @@ var fs       = require('fs'),
     modules  = ['mag-app'/*, 'stb-component'*/];
 
 
+/**
+ * Build paths for CSS files.
+ *
+ * @param mode
+ * @param resolution
+ *
+ * @return {Object[]}
+ */
 function preparePaths ( mode, resolution ) {
     var name = mode + '.' + resolution;
 
