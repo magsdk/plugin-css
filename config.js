@@ -33,7 +33,8 @@ function preparePaths ( mode, resolution ) {
 
         if ( !fs.existsSync(fileName) ) {
             // resolution-independent fallback
-            fileName = path.join(path.dirname(require.resolve(moduleName)), 'css', mode + '.css');
+            //fileName = path.join(path.dirname(require.resolve(moduleName)), 'css', mode + '.css');
+            fileName = path.join(process.cwd(), 'node_modules', moduleName, 'css', mode + '.css');
         }
 
         return fileName;
