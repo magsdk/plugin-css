@@ -17,10 +17,10 @@ var fs       = require('fs'),
 /**
  * Build paths for CSS files.
  *
- * @param mode
- * @param resolution
+ * @param {string} mode develop or release mode
+ * @param {string} resolution screen resolution
  *
- * @return {Object[]}
+ * @return {Object[]} generated paths
  */
 function preparePaths ( mode, resolution ) {
     var name = mode + '.' + resolution;
